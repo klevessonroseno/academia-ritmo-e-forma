@@ -3,8 +3,32 @@
   padding: 0px;
   box-sizing: border-box;
   font-size: 100%;
+}
+
+body {
+  height: 5000px;
   --font-family1: 'Anton', sans-serif;
   --font-family2: 'Space Grotesk', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family1);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #F9EF23;
+  font-size: 4.625rem;
+  line-height: 1;
+}
+
+p,
+span {
+  font-family: var(--font-family2);
+  font-weight: 400;
 }
 
 img {
@@ -13,108 +37,313 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: initial;
+  letter-spacing: 0.6px;
+  font-family: var(--font-family1);
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+ul,
 li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-body {
-  height: 4000px;
-}
-
 /* HEADER */
 
-.header {
-  width: 100%;
+.header-bg {
+  background-color: rgba(0, 0, 0, .8);
   position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(20, 20, 20, 0.8);
-  padding: 15px calc((100% - 1212px) / 2);
+  z-index: 1;
+  width: 100%;
+}
 
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
+
+/* LOGO */
 
 .logo {
   max-width: 260px;
-  padding: 0 10px;
 }
+
+/* MENU */
 
 .menu ul {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .menu a {
   color: #fff;
-  font-family: var(--font-family1);
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 30px 10px 5px;
+  border-bottom: 1px solid transparent;
 }
 
 /* HOME */
 
 .home-bg {
   background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url(../img/bg-image1-min.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-
   background-attachment: fixed;
-
-  padding: 0 calc((100% - 987px) / 2);
+  background-position: center top;
 
   min-height: 100vh;
+  padding: 0px calc((100% - 990px)/2);
 
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .home {
-  max-width: max-content;
+  padding: 150px 10px;
 }
 
 .home h1 {
   color: #fff;
-  font-size: 119px;
-  text-transform: uppercase;
-  line-height: 1.07;
-  font-family: var(--font-family1);
-  font-weight: 400;
-  padding-left: 10px;
+  font-size: 7.5rem;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 .home p {
   color: #fff;
-  font-size: 28px;
+  font-size: 1.8525rem;
   line-height: 1.1;
-  font-family: var(--font-family2);
-  max-width: 780px;
-  word-break: break-all;
-  margin-top: 13px;
-  padding-left: 10px;
+  margin-bottom: 50px;
 }
 
-.btn-large {
-  display: block;
-  color: #141414;
-  width: 377px;
-  height: 89px;
+.home a {
   background-color: #F9EF23;
-  font-size: 28px;
-  font-family: var(--font-family1);
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
+  font-size: 1.8525rem;
+  padding: 25px 90px;
   opacity: 0.5;
-  padding: 20px 0;
-  margin-top: 13px;
-  padding-left: 10px;
+}
+
+.home a:hover,
+.home a:focus {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+@media (max-width: 790px) {
+  .home {
+    padding-bottom: 50px;
+  }
+
+  .home h1 {
+    font-size: 5.5rem;
+    line-height: 1;
+  }
+
+  .home p {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .home a {
+    background-color: #F9EF23;
+    font-size: 1.1rem;
+    padding: 25px 90px;
+    opacity: 0.5;
+  }
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos-bg {
+  background-color: #141414;
+  padding: 100px 0;
+  position: relative;
+}
+
+.depoimentos-bg h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.depoimentos {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.depoimentos div {
+  flex: 0 1 280px;
+  min-height: 380px;
+  margin: 0px 10px 10px 0px;
+  position: relative;
+}
+
+.depoimentos section {
+  background-color: #F9EF23;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  color: #141414;
+}
+
+.depoimentos p {
+  margin-bottom: 10px;
+}
+
+.depoimentos span {
+  text-align: right;
+  font-style: italic;
+}
+
+.depoimentos div:nth-child(1) {
+  background-image: url(../img/depoimento1-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.depoimentos div:nth-child(2) {
+  background-image: url(../img/depoimento2-min.jpg);
+  background-position: center -15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.depoimentos div:nth-child(3) {
+  background-image: url(../img/depoimento3-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.depoimentos-bg::after {
+  display: block;
+  content: "";
+  background-color: #F9EF23;
+  height: 1px;
+  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 25%;
+}
+
+/* SERVIÇOS */
+
+.servicos-bg {
+  background-color: #141414;
+  padding: 100px 0;
+  position: relative;
+}
+
+.servicos-bg h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.servicos {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.servicos div {
+  flex: 0 1 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  margin: 0px 10px 10px 0px;
+  position: relative;
+}
+
+.servicos h3 {
+  color: #fff;
+  font-size: 1.8125rem;
+}
+
+.servicos div:nth-child(1) {
+  background-image: url(../img/servico1-min.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.servicos div:nth-child(2) {
+  background-image: url(../img/servico2-min.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.servicos div:nth-child(3) {
+  background-image: url(../img/servico3-min.jpg);
+  background-size: cover;
+  background-position: -160px center;
+  background-repeat: no-repeat;
+}
+
+/* PLANOS */
+
+/* SERVIÇOS */
+
+.planos-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/bg-image2-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+
+  min-height: 100vh;
+
+  padding: 100px 0;
+
+}
+
+.planos-bg h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.planos {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.planos div {
+  flex: 0 1 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  margin: 0px 10px 10px 0px;
+  position: relative;
+  background-color: #141414;
+  opacity: .8;
+}
+
+.planos h3 {
+  color: #fff;
+  font-size: 1.8125rem;
 }
