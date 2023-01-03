@@ -327,23 +327,81 @@ li {
   padding: 0 10px;
 
   display: flex;
+  align-items: flex-end;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .planos div {
   flex: 0 1 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 380px;
+  height: min-content;
   margin: 0px 10px 10px 0px;
-  position: relative;
+  padding: 30px;
   background-color: #141414;
-  opacity: .8;
+  opacity: .95;
 }
 
 .planos h3 {
+  text-align: center;
   color: #fff;
-  font-size: 1.8125rem;
+  font-size: 2.875rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F9EF23;
+}
+
+.preco {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F9EF23;
+  width: 100%;
+}
+
+.preco span,
+.preco h4 {
+  color: #fff;
+  font-family: var(--font-family1);
+  letter-spacing: 0.6px;
+  font-weight: 400;
+}
+
+.preco h4 {
+  font-size: 4.625rem;
+}
+
+.preco span {
+  font-size: 2.875rem;
+}
+
+.planos ul {
+  padding-top: 20px;
+}
+
+.planos li {
+  color: #fff;
+  font-size: 1.125rem;
+  font-family: var(--font-family2);
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.planos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #F9EF23;
+  font-size: 1.125rem;
+  padding: 15px 20px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.planos a:hover,
+.planos a:focus {
+  opacity: 1;
+  transition: 0.3s;
 }
