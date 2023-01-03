@@ -110,6 +110,7 @@ li {
 
 .home {
   padding: 150px 10px;
+  max-width: 85%;
 }
 
 .home h1 {
