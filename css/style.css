@@ -179,7 +179,6 @@ li {
 .depoimentos {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 10px;
 
   display: flex;
   flex-wrap: wrap;
@@ -187,9 +186,9 @@ li {
 }
 
 .depoimentos div {
-  flex: 0 1 280px;
-  min-height: 380px;
-  margin: 0px 10px 10px 0px;
+  flex: 0 1 307px;
+  min-height: 377px;
+  margin: 0px 20px 20px 0px;
   position: relative;
 }
 
@@ -212,20 +211,19 @@ li {
 }
 
 .depoimentos div:nth-child(1) {
-  background-image: url(../img/depoimento1-min.jpg);
+  background-image: url(../img/depoimento1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .depoimentos div:nth-child(2) {
-  background-image: url(../img/depoimento2-min.jpg);
-  background-position: center -15px;
+  background-image: url(../img/depoimento2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .depoimentos div:nth-child(3) {
-  background-image: url(../img/depoimento3-min.jpg);
+  background-image: url(../img/depoimento3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -257,7 +255,6 @@ li {
 .servicos {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 10px;
 
   display: flex;
   flex-wrap: wrap;
@@ -265,12 +262,13 @@ li {
 }
 
 .servicos div {
-  flex: 0 1 280px;
+  flex: 0 1 307px;
+  min-height: 377px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 380px;
-  margin: 0px 10px 10px 0px;
+  margin: 0px 20px 20px 0px;
   position: relative;
 }
 
@@ -280,29 +278,24 @@ li {
 }
 
 .servicos div:nth-child(1) {
-  background-image: url(../img/servico1-min.jpg);
+  background-image: url(../img/servico1.jpg);
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
 }
 
 .servicos div:nth-child(2) {
-  background-image: url(../img/servico2-min.jpg);
-  background-position: center center;
+  background-image: url(../img/servico2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .servicos div:nth-child(3) {
-  background-image: url(../img/servico3-min.jpg);
+  background-image: url(../img/servico3.jpg);
   background-size: cover;
-  background-position: -160px center;
   background-repeat: no-repeat;
 }
 
 /* PLANOS */
-
-/* SERVIÇOS */
 
 .planos-bg {
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/bg-image2-min.jpg);
@@ -325,7 +318,6 @@ li {
 .planos {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 10px;
 
   display: flex;
   align-items: flex-end;
@@ -334,10 +326,9 @@ li {
 }
 
 .planos div {
-  flex: 0 1 280px;
-  height: min-content;
-  margin: 0px 10px 10px 0px;
-  padding: 30px;
+  flex: 0 1 307px;
+  margin: 0px 20px 20px 0px;
+  padding: 5px 20px 20px 20px;
   background-color: #141414;
   opacity: .95;
 }
@@ -346,7 +337,7 @@ li {
   text-align: center;
   color: #fff;
   font-size: 2.875rem;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #F9EF23;
 }
 
@@ -354,8 +345,6 @@ li {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  margin-top: 20px;
-  padding-bottom: 20px;
   border-bottom: 1px solid #F9EF23;
   width: 100%;
 }
@@ -377,7 +366,7 @@ li {
 }
 
 .planos ul {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 .planos li {
@@ -385,7 +374,7 @@ li {
   font-size: 1.125rem;
   font-family: var(--font-family2);
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: capitalize;
 }
 
@@ -405,4 +394,54 @@ li {
 .planos a:focus {
   opacity: 1;
   transition: 0.3s;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos-bg {
+  background-color: #141414;
+  padding: 100px 0;
+  position: relative;
+}
+
+.quem-somos {
+  max-width: 990px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quem-somos div {
+  flex: 0 1 307px;
+  margin: 0px 20px 20px 0px;
+}
+
+.quem-somos div:nth-child(1) {
+  align-self: center;
+}
+
+.quem-somos div:nth-child(1) h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.quem-somos div:nth-child(1) p {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+
+.quem-somos div:nth-child(1) a {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.quem-somos div:nth-child(2) {
+  align-self: flex-start;
+}
+
+.quem-somos div:nth-child(3) {
+  align-self: flex-end;
 }
