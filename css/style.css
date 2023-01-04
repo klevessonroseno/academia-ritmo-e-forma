@@ -188,7 +188,7 @@ li {
 .depoimentos div {
   flex: 0 1 307px;
   min-height: 377px;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 15px 15px 0px;
   position: relative;
 }
 
@@ -268,7 +268,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 15px 15px 0px;
   position: relative;
 }
 
@@ -327,7 +327,7 @@ li {
 
 .planos div {
   flex: 0 1 307px;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 15px 15px 0px;
   padding: 5px 20px 20px 20px;
   background-color: #141414;
   opacity: .95;
@@ -415,7 +415,7 @@ li {
 
 .quem-somos div {
   flex: 0 1 307px;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 15px 15px 0px;
 }
 
 .quem-somos div:nth-child(1) {
