@@ -25,6 +25,12 @@ h2 {
   line-height: 1;
 }
 
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
 p,
 span {
   font-family: var(--font-family2);
@@ -404,6 +410,17 @@ li {
   position: relative;
 }
 
+.quem-somos-bg::after {
+  display: block;
+  content: "";
+  background-color: #F9EF23;
+  height: 1px;
+  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 25%;
+}
+
 .quem-somos {
   max-width: 990px;
   margin: 0 auto;
@@ -444,4 +461,82 @@ li {
 
 .quem-somos div:nth-child(3) {
   align-self: flex-end;
+}
+
+/* CONTATO */
+
+.contato-bg {
+  background-color: #141414;
+  padding: 100px 0;
+}
+
+.contato {
+  max-width: 990px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contato div {
+  flex: 0 0 55%;
+}
+
+.contato div:nth-child(1) {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato div:nth-child(1) h2 {
+  margin-bottom: 30px;
+}
+
+.contato div:nth-child(1) div {
+  margin-bottom: 20px;
+}
+
+.contato div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contato div:nth-child(2) p {
+  text-align: right;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contato-lista {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.contato-lista li {
+  cursor: pointer;
+  background-color: #F9EF23;
+  font-size: 1.125rem;
+  padding: 15px 30px;
+  opacity: 0.5;
+  margin: 0 0 30px 30px;
+}
+
+.contato-lista i {
+  margin-right: 5px;
+}
+
+.contato-lista a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.contato-lista li:hover,
+.contato-lista li:focus {
+  opacity: 1;
+  transition: 0.3s;
 }
